@@ -319,6 +319,8 @@ a {
 .sq-item-anchor{
     background-color: orange;
     position:absolute;
+    align-items: center;
+    justify-content: center;
     left:0;
     right:0;
     top:0;
