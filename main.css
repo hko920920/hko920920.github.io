@@ -301,7 +301,12 @@ a {
 }
 .wrapper{
     width: 1300px;
-    margin-left: 1%;
+    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    margin-left: -650px;
 }
 .sq-item {
     float: left;
