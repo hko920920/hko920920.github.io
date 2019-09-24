@@ -319,8 +319,6 @@ a {
 .sq-item-anchor{
     background-color: orange;
     position:absolute;
-    align-items: center;
-    justify-content: center;
     left:0;
     right:0;
     top:0;
@@ -488,7 +486,8 @@ input[type="submit"]:hover{
 
 body{
     background-color: white;
-    min-width:1310px;
+    min-width:1360px;
+    max-width:1440px;
 }
 
 .box{
