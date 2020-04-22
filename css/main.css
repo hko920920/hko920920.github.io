@@ -1,0 +1,1094 @@
+/*Start Tool Tips=======================================*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -0px;
+}
+
+.tooltip-left .tooltiptext {
+  visibility: hidden;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -500px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*End Tool Tips=======================================*/
+
+
+
+
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+
+nav ul {
+  list-style: ;
+  margin: 0;
+  padding: 0;
+}
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 0;
+  }
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #eee;
+  text-decoration: none;
+}
+nav ul li a.current, nav ul li .stick .current {
+  color: #3282b8;
+}
+
+
+
+
+@font-face{
+    src:url(../fonts/Nanumsquare/NanumSquareOTF_acR.otf);
+    font-family:nanum;
+}
+
+/*Start global*/
+.wid200{
+    width: 200px;
+}
+.wid100{
+    width: 100px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    min-width:1420px;
+    max-width: 1500px;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Advent Pro', sans-serif; 
+    margin-top: 150px;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Advent Pro', sans-serif;
+    opacity: 30%;
+}
+p{
+    font-family: nanum;
+    font-size:1.3rem;
+    font-weight: 300;
+    
+}
+span{
+    font-family: nanum;
+    font-size: 1.3rem;
+}
+.text1{
+    font-family: nanum;
+    font-size: 1.1rem;
+    opacity: 70%;
+}
+.text2{
+    font-family: nanum;
+    font-size: 0.8rem;
+    opacity: 60%;
+}
+ol,ul {
+	list-style:none;
+}
+.navy{
+    color:#0f4c75;
+    font-weight: bolder;
+}
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    height:100%;
+
+}
+
+a:link { color: black; text-decoration: none;}
+ a:visited { color: black; text-decoration: none;}
+ a:hover { color: #3282b8; text-decoration: none;}
+a:active{ color: #3282b8; text-decoration: none;}
+
+i:hover{
+    color: #3282b8
+}
+.wrapper{
+    margin-left: 230px;
+    margin-right:30px;
+}
+.blue1{
+    background-color: #c9d1d3;
+}
+
+
+/*End global*/
+
+
+
+/*Start reusable*/
+.has-margin-bottom-30{
+    margin-bottom: 30px;
+}
+.has-margin-bottom-20{
+    margin-bottom: 20px;
+}
+.has-margin-bottom-10{
+    margin-bottom: 10px;
+}
+.has-margin-right-30{
+    margin-right: 30px;
+}
+.has-margin-right-20{
+    margin-right: 20px;
+}
+.has-margin-right-10{
+    margin-right: 10px;
+}
+.has-margin-left-30 {
+    margin-left: 30px;
+}
+.has-margin-left-20 {
+    margin-left: 20px;
+}
+.has-margin-left-10 {
+    margin-left: 10px;
+}
+.has-margin-top-30 {
+    margin-top: 30px;
+}
+.has-margin-top-20 {
+    margin-top: 20px;
+}
+.has-margin-top-10 {
+    margin-top: 10px;
+}
+.has-margin-top-5 {
+    margin-top: 5px;
+}
+/*end reusable*/
+
+
+
+
+
+
+
+/*Sidenav, full height */
+.sidenav {
+
+  position: fixed;
+    top: 25%;
+  height: 100%;
+  width: 170px;
+  position: ;
+  background-color:;
+  z-index: 10;
+  margin-left: 3%;
+    margin-right: 2%;
+    float: left;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  font-family: 'Advent Pro', sans-serif;
+
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #3282b8;
+}
+
+/* Main content */
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: none;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #ffffff;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+
+/*End SideBarrrrrrrr*/
+
+
+
+/*Start header*/
+span.about{
+    color: #3282b8;
+        font-family: 'Advent Pro', sans-serif;
+
+    
+}
+
+.nav span{
+    float:right;
+    margin-right: 3%;
+        margin-top: 20px;
+
+}
+
+span.projects{
+    margin-right:10%;
+        font-family: 'Advent Pro', sans-serif;
+
+}
+
+.box{
+    font-family: 'Fjalla One', sans-serif;
+    text-align:center;
+    margin-top: 12%;
+}
+
+.box-title-people{
+   
+
+}
+.box p{
+    opacity: 90%;
+    color: #3282b8;
+    font-family:nanum;
+    padding: 3px;
+    margin-left: 5%;
+    font-size: 1.5rem;
+}
+.box-title{
+    color:darkslategrey;
+    position: relative;
+}
+
+
+img.box-title-people{
+    width:180px;
+    
+}
+
+
+.box-title h1{
+    position : center;
+    margin-left: 36%;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 2%;
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 1.3;
+    border-radius: 5px;
+    width: 35%;
+        font-family: 'Fjalla One', sans-serif;
+
+
+}
+
+.box-title h1:after{
+    content: 'Designer';
+    font-size:0.4em;
+    vertical-align: auto;
+    margin-left: 0.5em;
+    color: black;
+    font-style: italic;
+    opacity:0.5;
+}
+
+.cloud{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    background-image: url(../images/cloud.png);
+    animation-name: sky;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+}
+
+button{
+    border:0;
+    background:none;
+
+}
+
+header{
+    width: 100%;
+    height:100vh;
+}
+
+.down{
+    position: ;
+    margin-top: 5%;
+    margin-left: 50%;
+    margin-bottom: 8%;
+    width:3rem;
+    height:3rem;
+    background-color: #eee;
+    border-radius: 100%;
+    
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    z-index: 999;
+    
+}
+.down i{
+    color: #16162d;
+    font-size: 1.5rem;
+    padding-left: 14px;
+    padding-top: 13px;
+    
+}
+
+.logo{
+    width:60px;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 10px 10px #edf7fa;
+    z-index: 999;
+    margin-bottom: 100px;
+    
+    
+    
+
+}
+
+div#navbar.nav{
+    transition: all 0.2s ease;
+}
+
+.current{
+    color:#3282b8;
+}
+
+.nana{
+    width: 600px;
+}
+.blonde{
+    width: 600px;
+}
+.chimac{
+    width: 500px;
+}
+
+/*end header*/
+
+
+
+/*start about*/
+.about{
+    margin-top: ;
+}
+.about img{
+    float:;
+    margin-top:px;
+    margin-right: 10px;
+    
+}
+.abouttext{
+    margin-top: 20px;
+    height: 500px;
+
+}
+.abouttext p{
+    opacity: 100%;
+    ;
+}
+.abouttext i{
+    margin-left: 20px;
+}
+.abouttext span{
+    font-size: 1.1rem;
+}
+
+.fas.fa-user-circle.fa-lg{
+    padding-right: 6px;
+}
+.fas.fa-baby.fa-lg{
+    padding-left: 2px;
+    padding-right: 7px;
+}
+.fas.fa-home.fa-lg{
+    padding-right: 3px;
+}
+.fas.fa-mobile-alt.fa-lg{
+    padding-left: 4px;
+    padding-right: 10px;
+}
+.fas.fa-envelope.fa-lg{
+    padding-right: 7px;
+}
+.about span, .about i{
+
+} 
+.education{
+
+}
+.education h1{
+    clear: both;
+}
+/*end about*/
+
+
+
+/*start education*/
+
+.hundred{
+    width: 100%;
+}
+.sub1{
+    padding-left: 50px;
+    
+}
+.hover{
+    padding-top: 10px;
+}
+
+.jungle{
+    
+    padding-right: ;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+.brain{
+    
+    margin-left:;
+    padding-top: 40px;
+    padding-bottom: 10px
+}
+.far fa-file-word fa-7x{
+    margin: ;
+
+    padding-top: ;
+    padding-bottom: ;
+}
+.project{
+    padding-top: 50px;
+}
+.explain{
+    margin-top: 20px;
+    background-color: #bbe1fa;
+    width:790px;
+    height:300px;
+    border-radius: ;
+}
+
+.catho{
+    width:140px;
+}
+.stritch{
+    width:100px;
+}
+
+.ielts{
+    width:150px;
+}
+.toeic{
+    margin-left: 140px;
+    margin-top: 10px;
+    
+}
+.score{
+    margin-top: 5px;
+}
+
+.line{
+    height: 300px;
+    border-left: 2px solid blue;
+    opacity: 0.5;
+    
+}
+.abou{
+    transition: box-shadow 0.7s ease;
+}
+.abot:hover{
+    box-shadow: 10px 10px 10px black;
+    
+}
+.pro{
+    width: 400px;
+    position: relative;
+    top: -480px;
+    left: 190px;
+    z-index: 1;
+}
+.hi{
+    width: 400px;
+    position: relative;
+    top: -575px;
+    left: 600px;
+    z-index: 2;
+}
+.back{
+    width: 800px;
+    position: relative;
+    top: -1098px;
+    left: 350px;
+    margin-bottom: 18px;
+    z-index: -100;
+}
+
+.p1{
+    width: 270px;
+    height: 131px;
+    margin-left: 0px;
+    margin-right: 20px;
+    padding: 89px 25px;
+    position: ;
+    top: ;
+    margin-bottom:10px ;
+    font-size: ;
+}
+
+.square150{
+    width: 340px;
+    height:px;
+    display:;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+}
+
+.wider{
+    width: 590px;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+}
+.corner{
+    width: 140px;
+    height: 61px;
+    background-color:;
+    position: relative;
+    top: -65px;
+    left: 1010px;
+    
+}
+.stick{
+    
+    background-color: #0f4c75;
+    height: 30px;
+    width: 7px;
+    margin-top: 18px;
+}
+
+.stick2{
+    
+    background-color: #0f4c75;
+    height: 30px;
+    width: 7px;
+    margin-bottom: px;
+}
+
+.stick3{
+    
+    background-color: #0f4c75;
+    height: 50px;
+    width: 7px;
+    margin-bottom: px;
+}
+.stick4{
+    background-color: #beebe9;
+    height: 30px;
+    width: 7px;
+    margin-bottom: px;
+}
+
+.square200{
+    background-color: #bbe1fa;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-right: 20px;
+}
+.square230{
+    background-color: #dff6f0;
+    width: 200px;
+    height: 260px;
+    text-align: center;
+    margin-right: 20px;
+}
+.square300{
+    background-color: #dff6f0;
+    width: 300px;
+    height: 500px;
+    text-align: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.kosmo{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.explain2{
+    height: 250px;
+    width: 500px;
+
+    background-color: #bbe1fa;
+}
+.square500{
+    background-color: #dff6f0;
+    width: 520px;
+    height: 220px;
+    text-align: ;
+    margin-right: px;
+    padding: 20px
+}
+.square550{
+    background-color: #f5c3bc;
+    width: 520px;
+    height: 400px;
+    text-align: ;
+    margin-right: 20px;
+    padding: 20px;
+}
+.square350{
+    background-color: #f5c3bc;
+    width: 478px;
+    height: 400px;
+    padding: 20px
+}
+.british
+{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.show{
+    height: 216px;
+    margin-top: 23px;
+}
+.cardinal-ex{
+    position: relative;
+    left:580px;
+}
+
+/*/////////////////////////////////////*/
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 1100px;
+  height: 3000px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.modal-content1 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 1100px;
+  height: 2300px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 1100px;
+  height: 1100px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+/* The Close Button */
+.close {
+  color: black;
+  float: ;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: ;
+}
+
+.close:hover,
+.close:focus {
+  color: #3282b8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close1 {
+  color: black;
+  float: ;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: ;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #3282b8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: black;
+  float: ;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: ;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #3282b8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3 {
+  color: black;
+  float: ;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: ;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #3282b8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: ;
+  color: ;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.slide2{
+    width:799px;
+    overflow:hidden;
+}
+.slide2 ul{
+    width:7191px;
+    list-style: none;
+    font-size:0;
+}
+.slide2 ul li{
+    display:inline-block;
+}
+.slide2 button.prev2{
+    position:absolute;
+    margin-top: 300px;
+}
+.slide2 button.next2{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 300px;
+}
+
+.slider-for{
+    text-align: ;
+    width: 800px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.slider-nav{
+    width: 800px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.slider-nav img{
+    width: 100px;
+}
+
+.slider-for1{
+    text-align: ;
+    width: 1050px;
+    margin-left: px;
+    margin-top: 10px;
+}
+.slider-for1 img{
+    
+    width: 1050px;
+    
+}
+.slider-nav1{
+    width: 800px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.slider-nav1 img{
+    width: 100px;
+}
+
+.slider-for2{
+    text-align: ;
+    width: 900px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.slider-for2 img{
+    
+    width: 900px;
+    
+}
+.slider-nav2{
+    width: 800px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.slider-nav2 img{
+    width: 100px;
+}
+
+
+.slider-for3{
+    text-align: ;
+    width: 900px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.slider-for3 img{
+    
+    width: 900px;
+    
+}
+.slider-nav3{
+    width: 800px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.slider-nav3 img{
+    width: 100px;
+}
+
+/*Tabs/////////////////////////////////////////////*/
+/* Style the tab */
+.tab {
+  overflow:hidden;
+  border:;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color:;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 24px;
+    color: #ccc;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color:#3282b8;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color:#3282b8;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border:;
+  border-top: none;
+}
+/*Tabs/////////////////////////////////////////////*/
+/*end education*/
+
+/* start 3d */
+
+/* end 3d*/
+
+/*start timeline*/
+
+/*end timeline*/
+
+/*start contact*/
+
+/*end contact*/
+/*start footer*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+.up{
+    position: fixed;
+    width:3rem;
+    height:3rem;
+    background-color: #eee;
+    top: 90%;
+    left: 95%;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.up i{
+    color: #16162d;
+    font-size: 1.5rem;
+    margin: auto;
+    padding-left: 13px;
+    padding-top: 10px;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
+/*end footer*/
+/*start animation*/
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+/*end animation*/
+
+/*media queries*/
+
+@keyframes sky {
+    0% {
+        background-position: 0;
+    }
+    100%{
+        background-position:-100%;
+    }
+}
+
+
