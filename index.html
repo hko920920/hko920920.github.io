@@ -3,378 +3,1532 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HanKyeong Ko</title>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    
+    <title>HanKyeong Ko Portfolio</title>
+   
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" 
+      type="image/ico" 
+      href="images/favicon.ico">
+    
+<!==AOS========================================>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+<!==Font Awesome========================================>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
 
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="unit.css">
+<!==Main css========================================>
+    <link rel="stylesheet" href="../css/main.css">
 
-    <script src="js/controller.js"></script>
+<!==JQuery========================================>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<!==JQuery UI========================================>    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js">
+  
+    </script>
+  
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+  
+    
+    
+<!==Google Fonts========================================>
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:500&display=swap" rel="stylesheet">
+<!==SLick========================================>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+   
+    
+    
+    
+       
+
+    
+  <style>
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script
-            src="https://code.jquery.com/jquery-1.11.2.min.js"
-            integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA="
-            crossorigin="anonymous"></script>
+    
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-80px";
+    }
+  prevScrollpos = currentScrollPos;
+    }
+    
+    
+    function Scroll(){
+        var top = document.getElementById('sidenav');
+        var ypos = window.pageYOffset;
+        if(ypos > 500) {
+	   top.style.opacity = "1";
+        }
+        else{
+	   top.style.opacity = "0";
+	   }
+    }
+	window.addEventListener("scroll",Scroll);
+    
+    function Scroll1(){
+        var top1 = document.getElementById('up');
+        var ypos1 = window.pageYOffset;
+        if(ypos1 > 700) {
+	   top1.style.opacity = "1";
+        }
+        else{
+	   top1.style.opacity = "0";
+	   }
+    }
+	window.addEventListener("scroll",Scroll1);
+    
+</script>
+    
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+    
 </head>
+    
+    
+    
+    
 <body>
 
-<div class="menu-toggler" data-aos="fade-left" data-aos-delay="300">
-    <div class="bar half start"></div>
-    <div class="bar"></div>
-    <div class="bar half end"></div>
-</div>
-<nav class="top-nav">
-    <ul class="nav-list">
-        <li>
-            <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li>
-            <a href="#about" class="nav-link">About</a>
-        </li>
-        <li>
-            <a href="#Motion Graphic" class="nav-link">Motion Graphic</a>
-        </li>
-        <li>
-            <a href="#3D Graphic" class="nav-link">3D Graphic</a>
-        </li>
-        <li>
-            <a href="#Graduate Fashion Show" class="nav-link">Graduate Fashion Show</a>
-        </li>
-        <li>
-            <a href="#Work Experiences" class="nav-link">Work Experiences</a>
-        </li>
 
-    </ul>
-</nav>
-
+<div class="intro">
 <div class="box">
     <div class="box-title" data-aos="fade-in" data-aos-delay="300">
         <img class="box-title-people"
-             src="images/people.png" alt="" >
+             src="images/profile.png" alt="" >
         <h1>HanKyeong Ko</h1>
+        <p>"안녕하세요, 고한경입니다. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>세상을, 생활을 더 낫게 만들고 싶은 꿈은 결코 낡지 않습니다. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>나를 필요로 하는 곳에서, 생각하고, 스케치하고, 설계하고, 디자인합니다."</p>
     </div>
 </div>
 <div class="cloud" data-aos="fade-right" data-aos-delay="300"></div>
 
-<section class="about" id="about">
-    <div class="container" >
-        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-            <img src="images/profile.jpg" alt="">
-        </div>
-        <div class="about-datails" data-aos="fade-left" data-aos-delay="600">
-            <div class="about-heading">
-                <h2>About</h2>
-                <h6>Myself</h6>
+<div class="down" id="down" data-aos="fade-down" data-aos-delay="300">
+        <a href="#section-1"><i class="fas fa-chevron-down"></i></a>
+</div>
+</div>
+
+<nav class="sidenav" id="sidenav" data-aos="fade-" data-aos-delay="" style="opacity: 0;">
+  <ul>
+    <li><a href="#section-1">About</a></li>
+    <li><a href="#section-2">Education</a></li>
+    <li><a href="#section-3">English Tests</a></li>
+    <li><a href="#section-4">Work Experiences</a></li>
+    <li><a href="#section-5">툴 연습</a></li>
+    <li><a href="#section-6">Skill Set</a></li>
+    
+    
+  </ul>
+</nav>
+
+<nav>
+<div class='nav' id="navbar" data-aos="fade-in" data-aos-delay="300">
+    <a href="#"><img class='logo' src="images/logo.png"></a>
+    <a href=""><span class="projects">Projects</span></a>
+    <a href="#section-1"><span class="about">About</span></a>
+</div>
+</nav>
+ <!==Intro End========================================>   
+    
+    
+<main>    
+<div class="wrapper">
+    
+<!==About S========================================>
+  <section id="section-1">
+    <div class="about" >
+        
+    <h1 data-aos="fade-down" data-aos-delay="">About</h1>
+        <div class="abouttext">
+        
+        
+        
+            
+    
+            <div class='blue1 p1 shadow' data-aos="fade-down" data-aos-delay="200">
+            <p style="font-size: 1.1rem">"좋은디자인을 하기 위해 가장 중요한 것은 무엇일까 항상 고민하여 깨달은 답은 사람들의 니즈였습니다.<br><br> 더나은 생활과 세상을 만들 UX디자이너로써 사용자의 입장에선 디자인을 하고 싶습니다."</p>
             </div>
-                <h1>Creative individual with a sense of humor and passion for design:</h1>
-            <p>
-                I am a hard worker and I want to study in an environment that encourages<br> creative thinking, cross-discipline
-                collaboration and communication in order<br> to produce outstanding course and research results.
-            </p>
+            
+            
+            
+            <div class='square150 blue1' style="margin-right: 20px; margin-top:px;" data-aos="fade-down" data-aos-delay="1000">
+            <div>
+                <i class="fas fa-user-circle fa-lg"></i>
+                <span class='text2'>고한경 HanKyeong Ko</span>
+            </div>
+            </div>
+                
+            <div class='square150 blue1 ' style="margin-right: 20px" data-aos="fade-down" data-aos-delay="1200">
+            <div>
+                <i class="fas fa-baby fa-lg"></i>
+                <span class='text2'>1992년 9월 20일생 29세(만27세)</span>
+            </div>
+            </div>
+                
+            <div class='square150 blue1' style="margin-right: 20px" data-aos="fade-down" data-aos-delay="1400">
+            <div >
+                <i class="fas fa-home fa-lg"></i>
+                <span class='text2'>서울시 금천구 가산동 거주</span>
+            </div>
+            </div>
+            
+            <div class="clear"></div>
+            
+            <div class='square150 blue1' style="margin-right: 21px;" data-aos="fade-down" data-aos-delay="1600">
+            <div>
+                <i class="fas fa-fighter-jet fa-lg"></i>
+                <span class='text2'>2013.7~2015.4 병장 제대</span>
+            </div>
+            </div>
+            
+            <div class='blue1 wider' style="margin-right: 21px;" data-aos="fade-down" data-aos-delay="1800">
+            <div >
+                <i class="fas fa-mobile-alt fa-lg"></i>
+                <span class='text2'>010 5816 0920</span>
+            </div>
+            </div>
+                
+            <div class='blue1 wider' data-aos="fade-down" data-aos-delay="2000" class='float-left'>    
+            <div >
+                <i class="fas fa-envelope fa-lg"></i>
+                <span class='text2'>hko920920@gmail.com</span>
+            </div>
+            </div>
+            
+            <div class="corner float-left blue1" data-aos="fade-down" data-aos-delay="2200"></div>
+                 
+                
+            <div class=''>
+        <img src="images/profile.jpg"  class="pro" data-aos="fade-down" data-aos-delay="400">
+        </div>    
+            
+        <div class=''>
+        <img src="images/3D-8.gif"  class="hi" data-aos="fade-down" data-aos-delay="800">
+        </div>
+            
+        <div class=''>
+        <img src="images/back.gif"  class="back" data-aos="fade-down" data-aos-delay="400">
+        
+        </div>
+            
+        </div>
+    </div>
+     
+    </section>
+<!==About E========================================>    
+<!==Education S========================================>
+  <section id="section-2">
+    <div class="education">
+        
+<!==RightBrain S========================================>
+        <h1 data-aos="fade-down" data-aos-delay="0">Education</h1>
+        <br><br>
+        <div class="sub1">
+            
+            <div data-aos="fade-down" data-aos-delay="200">
+            <div class="stick float-left"></div>    
+            <span class="navy">&nbsp;&nbsp;2020.01.09 ~ 2020.04.07 Rightbrain UX Academy UI/UX School 10기 수료&nbsp;&nbsp;</span>
+            
+            <div class="tooltip">
+                <i class="far fa-file-image fa-lg"></i>
+                <img src="images/lee.jpg" class="tooltiptext">
+            </div>
+            <img src="images/Hover.png" class="hover">
+            <br><br>
+            </div>
+            
+            
+            <div class="square200 float-left" 
+                 data-aos="fade-down" data-aos-delay="400"
+                 style=""
+                 >
+                
+            <a href="https://ejungle.co.kr/index.jsp" target="_blank"><img src="images/jungle.jpg" class="jungle wid200"></a>
+            
+            <p class="text1">장소:아카데미 정글</p>
+            
+            <p class="text2">서울시 서초구 나루터로 67 (잠원동 15-7)</p>
+            
+            </div>
+                
+            
+            <div data-aos="fade-down" data-aos-delay="600"
+                 class="float-left square200"
+                 style="">
+            
+                
+            <a href="http://www.rightbrain.co.kr/CMS/"
+               target="_blank"><img src="images/brain.jpeg" class="brain  wid200"></a>
             <br>
+            <span class="text1">라이트브레인</span>
             <br>
-        </div>
+            <span class="text2">강사:조성봉(라이트브레인 컨설팅그룹 이사)</span>
+            
+            </div>
+            
+            <div data-aos="fade-down" data-aos-delay="800"
+                 class="float-left square200"
+                 style="">
+            
+            <br><br><br>    
+            <a href="" class='project'><i class="far fa-file-word fa-7x"></i></a>
+            <br><br>
+                <span class="text1">프로젝트 둘러보기</span>
+                <i class="far fa-hand-point-right" style=""></i>
+            
+            
+            </div>
+            
+            <div class="clear"></div>
+            
+            
+            <div data-aos="fade-down" data-aos-delay="1000">
+            <div class='explain'>
+            
+                <p style="padding: 15px; padding-top: 20px; font-size: 19px; ">
+    "라이트브레인 UX 아카데미 수업을 수료하고 프로젝트를 진행하였습니다. 프로젝트 주제를 선정하여 UX전반에 관련한 이론을 학습한 후 그것을 프로젝트에 적용하여 과제물을 만들고 강사님으로 부터 피드백을 받아 수정하는 과정들을 통해 'Netflix' 어플리케이션 UX/UI 개선 프로젝트를 완료하였습니다.
+<br><br>&nbsp;
+    더블다이아몬드 디자인 프로세스 안에서 Discover, Define, Develop, Deliver 단계별로 이어지는 이론을 즉시 실제 진행하고 있는 프로젝트에 적용하고 실습 할 수 있어 많은 성장을 이룰 수 있었던 경험이었습니다.
 
+                
+<br><br>&nbsp;
+    특히, 필드리서치를 계획하고 진행하는 부분에서 어색하고 부족한 부분이 있었지만 많은 회의와 수정을 통해 도출한 스트립트를 기반으로 리서치를 진행했습니다. 그 결과들을 토대로 여러 모델링 작업을 통해 키파인딩과 인사이트, 나아가 가치를 도출해내어 UX 디자인의 핵심인 서비스컨셉까지 확립해 나갈 수 있었습니다.
+"                </p>
+                
+            </div>
+            </div>
+                <br><br><br>
+        
+            
+<!==RightBrain E========================================>
+            
+<!==KOSMO S========================================>
+            <br>
+            <div data-aos="fade-down" data-aos-delay="300">
+            <div class="stick2 float-left"></div>       
+            <span class="navy">&nbsp;&nbsp;2019.11.30 ~ 2019.12.21 UIUX 기초부터 실무활용 수료&nbsp;&nbsp;</span>
+            
+            <div class="tooltip">
+                <i class="far fa-file-image fa-lg"></i>
+                <img src="images/lee.jpg" class="tooltiptext">
+            </div>
+            </div>
+            <br>
+            
+            <div class="float-left square200"
+                 data-aos="fade-down" data-aos-delay="600">
+            <a href="http://www.ikosmo.co.kr/"
+               target="_blank"><img src="images/kosmo.jpeg" class="kosmo wid200"></a>
+            
+            <p class="text1">장소:한국소프트웨어인재개발원</p>
+            
+            <p class="text2">서울시 금천구 가산동 426-5</p>
+            </div>
+            
+            
+            <div class="float-left square200"
+                 data-aos="fade-down" data-aos-delay="900">
+            <img src="images/lee.jpg" class="has-margin-top-10 has-margin-bottom-10">
+            
+            <p class="text1">강사:저자 이광훈 </p>
+            
+            <p class="text2">(사용자 경험을 창조하는 UX/UI디자인)</p>
+                
+            </div>
+                
+            <div class='explain2 float-left'
+                 data-aos="fade-down" data-aos-delay="1200">
+<p style="padding: 15px; padding-top: 40px; font-size: 19px; ">
+    "이론적인 UX정의와 Discover, Define, Develop, Deliver 단계별로 이어지는 더블다이아몬드 디자인 프로세스를 학습하였습니다.
+<br><br>&nbsp;
+    다양한 리서치와 모델링 기법들을 활용한 사용자 분석을 통해 UX디자인 키포인트 확립과 그에 적절한 IA, 유저플로우, UI패턴 설계법을 배우고  Adobe Xd를 사용한 UI디자인과 Interaction디자인, 프로토타입 도출을 실습하였습니다.      
+"</p>            
+            </div>    
+                
+            
+<!==KOMSO E========================================>    
+            <div class="clear"></div>
+              <br><br><br>
+            
+<!==EZEN JAVA S========================================> 
+            
+            <div data-aos="fade-down" data-aos-delay="1500">
+            <div class="stick2 float-left"></div>       
+            <span class="navy">&nbsp;&nbsp;2019.8.20 ~ 2020.2.17 자바를 활용한 안드로이드 앱개발  수료&nbsp;&nbsp;</span>
+            
+            <div class="tooltip tooltip-left">
+                    <i class="far fa-file-image fa-lg"></i>
+                    <img src="images/수료증이젠.png" class="tooltiptext">
+                </div>
+            </div>
+            <br>
+            
+            <div class="float-left square200"
+                 data-aos="fade-down" data-aos-delay="1800">
+            <a href="https://gn.ezenac.co.kr/"
+               target="_blank"><img src="images/ezen.jpeg" class="jungle"></a>
+            
+            <p class="text1">장소:이젠컴퓨터아카데미 강남</p>
+            
+            <p class="text2">서울시 서초구 서초대로77길 54</p>
+            </div>
+            
+            
+            
+            
+            <div class="float-left square200"
+                 data-aos="fade-down" data-aos-delay="2100">
+                <br><br><br>
+            <a href="javascript:void(0)"><i class="far fa-file-word fa-7x" id='myBtn3'></i></a>
+                <br><br>
+            <span class="text1">프로젝트 둘러보기</span>
+                <i class="far fa-hand-point-right fa-lg" style=""></i>
+                
+            </div>
+                
+            <div class='explain2 float-left'
+                 data-aos="fade-down" data-aos-delay="2400">
+<p style="padding: 15px; padding-top: 20px; font-size: 19px; ">"6개월 960시간에 걸친 국비지원 응용SW엔지니어링 기초 수업을 수료하였습니다.<br><br>
+&nbsp;자바 프로그래밍과 SQL의 기본적인 개념들과 논리적 흐름을 시작으로 웹디자인, 기초 웹 프로그래밍(HTML, CSS, JS)을 학습하였습니다. <br><br>&nbsp;프로젝트 진행 시 주로 디자인적 요소에 기여를 하였지만, 프로그래밍의 기본적인 논리는 이해하고 있었기에 원활한 회의와 의사소통을 하며 결과물을 만들 수 있었습니다.
+"</p>
+            </div>    
+            
+            <div class="clear"></div>
+               
+            
+<!-- Modal Start--------------------------- -->            
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="close3">Close</h2>
+      
     </div>
-</section>
-
-<section class="Motion Graphic" id="Motion Graphic">
-    <div class="container" >
-        <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
-            <h4>Motion Graphic</h4>
-
-        </div>
-        <div class="portfolio-item">
-            <div class="portfolio-img has-margin-right" data-aos="fade-left" data-aos-delay="300">
-                <img src="images/bmi.gif" alt="">
-            </div>
-            <div class="portfolio-description" data-aos="fade-right" data-aos-delay="600">
-                <h6>UX Prototype</h6>
-                <h1>BMI Calculator App</h1>
-                <p>I designed this BMI Calculator App operating motion graphic feature with PS, Ai, and Adobe XD software for the portfolio and practicing designing tools.<br><br>The basic idea is that when the user inputs his heignt and weight, the App calculates and shows the user's BMI evaluation with body condition .<br><br>I made this graphic design with LEGO characters to make it more attractive for as many people as possible.</p>
-
-            </div>
-        </div>
-        <div class="portfolio-item">
-            <div class="portfolio-description has-margin-right" data-aos="fade-left" data-aos-delay="600">
-                <h6>UX Prototype</h6>
-                <h1>KaKao Pay App</h1>
-                <p>There is an App, used by 99% of Korean population, called 'KaKao messenger'. In this messenger, people also can use financial service, called 'KaKao Pay' and I developed another operating processes with graphic design tools.<br><br>User can choose sending or receiving function by dragging the icons to middle area. Next, user selects the person to make service, the amount of money and type.</p>
-
-            </div>
-            <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                <img src="images/kakao pay.gif" alt="">
-            </div>
-
-        </div>
-        <div class="portfolio-item">
-            <div class="portfolio-img has-margin-right" data-aos="fade-left" data-aos-delay="300">
-                <img src="images/son.gif" alt="">
-            </div>
-            <div class="portfolio-description" data-aos="fade-right" data-aos-delay="600">
-                <h6>Motion Graphic Prototype</h6>
-                <h1>The New York Times</h1>
-                <p>I designed motion graphic prototype of The New York Times Sports section. I have been huge fan of EPL and I made this to celebrate Korean soccer player 'Son' in Tottenham.</p>
-            </div>
-        </div>
+    <div class="modal-body">
+        
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_01.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_02.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_03.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_04.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_05.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_06.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_07.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_08.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_09.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_10.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_11.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_12.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_13.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_14.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_15.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_16.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_17.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_18.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_19.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_20.png"
+         class="hundred">
+        
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_21.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_22.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_23.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_24.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_25.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_26.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_27.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_28.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_29.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_30.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_31.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_32.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_33.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_34.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_35.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_36.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_37.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_38.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_39.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_40.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_41.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_42.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_43.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_44.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_45.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_46.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_47.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_48.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_49.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_50.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_51.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_52.png"
+         class="hundred">
+        <img src="images/eezen/3%E2%94%B4%C3%82%20PICK_Page_53.png"
+         class="hundred">
+        
+        
     </div>
-</section>
+  </div>
+</div>
+<!-- Modal End--------------------------- -->
+<!==EZEN JAVA E========================================> 
+            
+            
+<!==Univs S========================================> 
+            
+<!==Catho S========================================> 
+            <br><br><br>
+            <h2 class="has-margin-bottom-20"
+                data-aos="fade-down" data-aos-delay="300">Universities</h2>
+            
+            
+            <div>
+            <div class='square300 float-left'
+                 data-aos="fade-down" data-aos-delay="600">
+            <p style="padding: 15px; padding-top: 30px; font-size: 19px; ">"경영학과를 주전공, 의상디자인학과를 복수전공으로 학사과정을 수료 하였습니다.<br><br>
+&nbsp;경영학과 학생으로 비즈니스 환경에서의 객관적인 데이터 수집과 분석, 마케팅을 공부하였습니다. <br><br>&nbsp;의상디자인 학생으로 심미적인 관점에서의 디자인 도출과 더불어 실질적인 의류재봉의 기본을 학습하였습니다.
+<br><br>&nbsp;
+                  더블다이아몬드 프로세스에서의 첫번째 다이아몬드에서 경영학도의 객관적인 분석력을 , <br><br>&nbsp;두번째 다이아몬드에선 의류학도의 미적감각을 이용하여 UX디자인 프로젝트에 많은 기여를 할 수 있었습니다"</p>
+                
+            </div>
+            
+            <div class="square230 float-left"
+                 data-aos="fade-down" data-aos-delay="900">
+                <br><br><br>
+                <a href="javascript:void(0)" id="myBtn"><i class="far fa-file-word fa-7x"></i></a>
+                    <br><br>
+                <span class="text1">의상디자인 졸업 패션쇼<br> Project 둘러보기</span>
+                    <i class="far fa-hand-point-right fa-lg" style=""></i>
 
-<section class="3D Graphic" id="3D Graphic">
-    <div class="container">
-        <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
-            <h4>3D Graphic</h4>
-        </div>
+            </div>
+<!-- Modal Start--------------------------- -->            
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="close">Close</h2>
+      <h1 style="margin-top: 5%; text-align: center">Graduate Fashion Show </h1>
     </div>
-    <div class="wrapper">
-        <ul class="sq clearfix" data-aos="fade-in" data-aos-delay="600">
-            <li class="sq-item">
-                <a class="sq-item-anchor" href="">
-                    <img class="sq-item-anchor-cover"
-                         src="images/3D-1.gif" alt="">
-                </a>
-            </li>
-            <li class="sq-item">
-                <a class="sq-item-anchor" href="">
-                    <img class="sq-item-anchor-cover"
-                         src="images/3D-2.gif"alt="">
-                </a>
-            </li>
-            <li class="sq-item">
-                <a class="sq-item-anchor" href="">
-                    <img class="sq-item-anchor-cover"
-                         src="images/3D-3.gif"alt="">
-                </a>
-            </li>
-            <li class="sq-item">
-                <a class="sq-item-anchor" href="">
-                    <img class="sq-item-anchor-cover"
-                         src="images/3D-4.gif"alt="">
-                </a>
-            </li>
-            <li class="sq-item">
-                <a class="sq-item-anchor" href="">
-                    <img class="sq-item-anchor-cover"
-                         src="images/3D-5.gif"alt="">
-                </a>
-            </li>
-            <li class="sq-item">
-                <a class="sq-item-anchor" href="">
-                    <img class="sq-item-anchor-cover"
-                         src="images/3D-6.gif"alt="">
-                </a>
-            </li>
-            <li class="sq-item">
-                <a class="sq-item-anchor" href="">
-                    <img class="sq-item-anchor-cover"
-                         src="images/3D-7.gif"alt="">
-                </a>
-            </li>
-            <li class="sq-item">
-                <a class="sq-item-anchor" href="">
-                    <img class="sq-item-anchor-cover"
-                         src="images/3D-8.gif"alt="">
-                </a>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section class="Graduate Fashion Show" id="Graduate Fashion Show">
-    <div class="container">
-        <div class="section-heading-show" data-aos="fade-in" data-aos-delay="300">
-            <h5>Graduate Fashion Show</h5>
+    <div class="modal-body">
+        
+        <div style="text-align: center; margin: 20px 0px" >
+        <img src="images/Fashion show hig quality.gif" alt="" >
         </div>
-        <div class="portfolio-item" data-aos="fade-in" data-aos-delay="900">
-            <div class="portfolio-img has-margin-top">
-                <img src="images/Fashion show hig quality.gif" alt="">
-            </div>
-
+        
+        <div style="margin-top: 50px;
+                    margin-bottom: 50px;
+                    margin-right:30px;" 
+             class="float-left">
+        <iframe src="https://player.vimeo.com/video/384950993" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
-        <div class="portfolio-item ">
-            <div class="portfolio-video has-margin-top" data-aos="fade-up" data-aos-delay="300">
-                <video controls autoplay="autoplay" loop="true">
-                <source src="images/Ko HanKyeong Graduate Fashion Show Video Sample Edited copy1.mp4" video="web/mp4">
-                </video>
-            </div>
-            <div class="portfolio-description has-margin-top" data-aos="fade-right" data-aos-delay="600">
-                <h6>Creative Works</h6>
-                <h1>Designer, Photographer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                <p2>In 2018 fall, I had been working on Graduate Fashion Show as a designer for couple of garments and photographer, editor for all the garments.  </p2>
-
-            </div>
+        
+        <div style="margin-top: 200px">
+        <h2 style="margin-bottom: 30px;">Designer, Photographer</h2>
+      <p>2018년 가을에 있었던 졸업 패션쇼에서, <br> 두벌의 무대의상을 제작하였고, 모든 의상들에 대한 사진작업을 진행하여 기념 브로셔제작에 도움을 주었습니다.</p>
+      </div>
+        
+        <div class="clear"></div>
+    <hr>    
+        <div style="margin-left: 150px;">
+            <h2 style="margin:30px 0px;">Photographer</h2>
+          <p>포토그래퍼로써, 각 의상과 모델의 특성에 맞는 최상의 사진작업을 진행하기 위해 메이크업과 무대조명,<br> 배경색상 등의 선정을 주도하여 각 팀별 니즈에 맞춘 작업물을 생산할 수 있었습니다.</p>
+        </div>    
+        
+        
+      
+        <div class='slider-for'>
+            <div><img src="images/photographer/photographer00.png" alt=""/></div>
+            <div><img src="images/photographer/photographer11.png" alt=""/></div>
+            <div><img src="images/photographer/photographer22.png" alt=""/></div>
+            <div><img src="images/photographer/photographer33.png" alt=""/></div>
+            <div><img src="images/photographer/photographer44.png" alt=""/></div>
+            <div><img src="images/photographer/photographer55.png" alt=""/></div>
+            <div><img src="images/photographer/photographer66.png" alt=""/></div>
+            <div><img src="images/photographer/photographer77.png" alt=""/></div>
+            <div><img src="images/photographer/photographer88.png" alt=""/></div>
         </div>
-        <div class="portfolio-item">
-            <div class="portfolio-description has-margin-right" data-aos="fade-left" data-aos-delay="600">
-                <h6>Creative Works</h6>
-                <h1>Photographer, Editor</h1>
-                <p>As a photographer and Editor, I figured the best way to match photography into each garment's unique concept, model, make up and background color through active discussions and conversations to accomplish outstanding results.</p>
-            </div>
-
-            <div class="slide" data-aos="fade-in" data-aos-delay="300">
-                <button class="prev" type="button"><img src="images/left.png" alt="" /></button>
-                <button class="next" type="button"><img src="images/right.png" alt="" /></button>
-                <ul>
-                    <li><img src="images/photographer/photographer00.png" alt=""/></li>
-                    <li><img src="images/photographer/photographer11.png" alt=""/></li>
-                    <li><img src="images/photographer/photographer22.png" alt=""/></li>
-                    <li><img src="images/photographer/photographer33.png" alt=""/></li>
-                    <li><img src="images/photographer/photographer44.png" alt=""/></li>
-                    <li><img src="images/photographer/photographer55.png" alt=""/></li>
-                    <li><img src="images/photographer/photographer66.png" alt=""/></li>
-                    <li><img src="images/photographer/photographer77.png" alt=""/></li>
-                    <li><img src="images/photographer/photographer88.png" alt=""/></li>
-
-                </ul>
-
-            </div>
-
+        <div class='slider-nav'>
+            <div><img src="images/photographer/photographer00.png" alt=""/></div>
+            <div><img src="images/photographer/photographer11.png" alt=""/></div>
+            <div><img src="images/photographer/photographer22.png" alt=""/></div>
+            <div><img src="images/photographer/photographer33.png" alt=""/></div>
+            <div><img src="images/photographer/photographer44.png" alt=""/></div>
+            <div><img src="images/photographer/photographer55.png" alt=""/></div>
+            <div><img src="images/photographer/photographer66.png" alt=""/></div>
+            <div><img src="images/photographer/photographer77.png" alt=""/></div>
+            <div><img src="images/photographer/photographer88.png" alt=""/></div>
         </div>
-        <div class="portfolio-item">
-            <div class="slide2 has-margin-right" data-aos="fade-in" data-aos-delay="300">
+        
+        
+            <br><br><br>
+        <hr>
+            <div style="margin-left: 150px;">
+            <h2 style="margin:30px 0px;">Designer</h2>
+          <p>디자이너로써, 두가지 다른 팀에 소속했습니다.<br>
+                하나는 '행성'을, 다른 하나는 '군중속의 외로움'을 소주제로 하여 <br>각 주제에 맞는 창의적인 디자인과 재봉을 완료하여 쇼를 성공적으로 마칠 수 있었습니다.
+                
+                </p>
+        </div>    
+        
+        <div class="slide2" data-aos="fade-in" data-aos-delay="300" style="margin-left: 150px; 
+                            margin-top: 30px;">
                 <button class="prev2" type="button"><img src="images/left.png" alt="" /></button>
                 <button class="next2" type="button"><img src="images/right.png" alt="" /></button>
                 <ul>
                     <li><img src="images/designer/pic11.png" alt=""></li>
                     <li><img src="images/designer/pic22.png" alt=""></li>
                 </ul>
+            </div>
+        
+        
+        
+        
+    </div>
+  </div>
+</div>
+<!-- Modal End--------------------------- -->            
 
+                
+            <div class='square500 float-left'
+                 data-aos="fade-down" data-aos-delay="1200">
+                
+
+                <img src="images/catho.png" class="catho has-margin-bottom-10">
+                <br>
+                <div class="stick2 float-left"></div>       
+                <span class="navy">&nbsp;&nbsp;2012.03 ~ 2018.09 가톨릭대학교 경영학, 의상디자인 학사</span><br><br><br>
+
+                    <span class="text1">&nbsp; 졸업증명서 </span>
+
+                
+                <div class="tooltip tooltip-left">
+                    <i class="far fa-file-image fa-lg"></i>
+                    <img src="images/Graduate%20Certificate_HanKyeong%20Ko%20in%20Kor.png" class="tooltiptext">
+                </div> 
+                    
+                
+                <span class="text1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성적증명서 GPA 3.34/4.5</span>
+
+                    <div class="tooltip tooltip-left">
+                    <i class="far fa-file-image fa-lg"></i>
+                    <img src="images/Transcript%20of%20academic%20record_HanKyeog%20Ko%20in%20Kor_Page_1.png" class="tooltiptext">
+                    </div>
+                
             </div>
-            <div class="portfolio-description" data-aos="fade-right" data-aos-delay="600">
-                <h6>Creative Works</h6>
-                <h1>Designer</h1>
-                <p>As a designer, I was in two different design teams. One had the 'Planet' as a small theme and the other team had 'Loneliness in crowd'  with the main theme 'The Little Prince'. In each team, we figured how to express our creative art works.
-                <br><br>These are my personal design works. <br>I made those jackets, pants, inner wears and cape.  </p>
+                
+                
+                <img src="images/Show.gif" class='show  has-margin-right-10 float-left'
+                     data-aos="fade-down" data-aos-delay="1500">
+            <img src="images/Show2.gif" class='show'
+                 data-aos="fade-down" data-aos-delay="1800">
+                
             </div>
-        </div>
+            
+            
+        </div>  
     </div>
 </section>
+    <div class='clear'></div>
+    
+<!==Catho E========================================> 
+    
+<!==Stritch S========================================> 
+  <section id="section-3">
+      
+      
+      
+      <div class="sub1">
+          
+            <div class='square550 float-left'
+                 data-aos="fade-down" data-aos-delay="2100"
+                 style="display: ">    
+                
+            <a href="https://www.stritch.edu/?gclid=CjwKCAiA1L_xBRA2EiwAgcLKA5MdeJESuxyDXgEpR0zWhYWgQpwYZOpcJhxZ-ExXv7wuy1rmerwnNhoC-WEQAvD_BwE"
+               target="_blank"><img src="images/stritch.png" class="stritch"></a><br><br>
+          <div class="stick3 float-left"></div>       
+            <span class="navy">&nbsp;&nbsp;2016.11 ~ 2018.02 Cardinal Stritch University <br>&nbsp;&nbsp;in Milwaukee WI US 교환학생 유학</span><br><br>
+          <br><br>
+                
+          <span class='  has-margin-top-30'>&nbsp;
+              관련 어학성적&nbsp;&nbsp;&nbsp;</span>
+          
+            <br><br>
+                
+          &nbsp;&nbsp;&nbsp;<img src="images/british.png" class='british has-margin-bottom-10'>      
+                
+          <img src="images/ielts.jpg" class=''>
+          
+          <span class=''>&nbsp;&nbsp;  7.5 overall band </span>
+          
+          <div class="tooltip has-margin-top-10" >
+                &nbsp;&nbsp;<i class="far fa-file-image fa-lg"></i>
+                <img src="images/Scanned%20IELTS%20test%20score%20transcript%20front_Ko%20HanKyeong.png" class="tooltiptext">
+            </div>
+          
+          <br><br>
+          &nbsp;&nbsp;&nbsp;<img src="images/toeic.png" class="british">
+          <span class=''> 920</span>
+          
+          <div class="tooltip">
+                &nbsp;&nbsp;<i class="far fa-file-image fa-lg"></i>
+                <img src="images/lee.jpg" class="tooltiptext">
+            </div>
+                <br><br>
+                
+          
+      </div>
+          
+        
+          <div class="square350"
+               data-aos="fade-down" data-aos-delay="2400"
+               style="display: inline-block;
+                      ">
+              
+              <p style="padding-top: 80px; font-size: 19px; ">"일년넘는 기간동안 미국으로 유학을 갈 수 있었던 기회가 있었습니다.<br><br>
+&nbsp;영어권 국가의 첫 방문이었기 때문에 영어로 의사소통을 전혀 할수 없었던 상황속에서 많은 시련들이 있었습니다. <br><br>&nbsp;절망을 뒤로 하고 필사적으로 살아남기 위해 주변의 모든 것을 오로지 영어로 채우기 시작하며 서서히 영어가 들리기 시작했습니다. 결과적으로 원어민들과 자연스러운 의사소통을 하며 생활할 수 있었고, 마케팅부서에서 인턴까지 경험할 수 있었습니다. 
+                 
+            </div>
+          
+          
+      </div>
+          
+  </section>
+<!==Stritch E========================================> 
+<!==Univs E========================================> 
+    
+    
+    <div class="clear"></div>
+  <section id="section-4">
+    
+      <div data-aos="fade-down" data-aos-delay="300"><h1>Work Experiences</h1></div>
+      <br><br>
+      
+<!==Web designer, Photographer in Cardinal Stritch University S========================================> 
+        <div class='sub1'>
+            <div data-aos="fade-down" data-aos-delay="600">
+            <div class="stick2 float-left"></div>       
+            <span class="navy"
+                  data-aos="fade-down" data-aos-delay="900">&nbsp;&nbsp;2017.11 ~ 2018.02 Web designer, Photographer in Cardinal Stritch University&nbsp;&nbsp;</span>
+            
+            
+            </div>
+            <br>
+            
+            <div class="float-left square200" style="background-color: #beebe9"
+                 data-aos="fade-down" data-aos-delay="1200">
+            <a href="https://www.stritch.edu/?gclid=CjwKCAiA1L_xBRA2EiwAgcLKA5MdeJESuxyDXgEpR0zWhYWgQpwYZOpcJhxZ-ExXv7wuy1rmerwnNhoC-WEQAvD_BwE"
+               target="_blank"><img src="images/stritch.png" style="width: 130px; margin-top: 30px; margin-bottom: 10px;"></a>
+            
+            <p class="text1">Cardinal Stritch Univ. Marketing Department & Theater Department</p>
+            
+            
+            </div>
+            
+            <div class='explain2 float-left' style="background-color: #beebe9; margin-right: 20px;"
+                 data-aos="fade-down" data-aos-delay="1500">
+                <p style="padding: 15px; font-size: 19px">"유학시절 해당학교 마케팅부서에서 학생인턴으로 근무할 수 있는 기회가 있었습니다.<br><br>
+&nbsp;기존에 가지고 있었던 사진촬영과 어도비 소프트웨어 툴 사용 기술들을 바탕으로 웹디자인의 기본(HTML,CSS)을 배우고, 실제 공식홈페이지에 적용할 수 있었던 경험이었습니다. <br><br>&nbsp;직접 촬영한 사진과 영상 자료들, 웹디자인 기술들을 활용하여 학교 홈페이지에 교내 활동들에대한 글들을 포스팅하는 업무를 진행하였습니다."</p>
+            </div>
+            
+            
+            <div class="float-left square200 " style="background-color: #beebe9"
+                 data-aos="fade-down" data-aos-delay="1800">
+                <br><br><br>
+            <a href="javascript:void(0)"><i class="far fa-file-word fa-7x" id='myBtn1'></i></a>
+                <br><br>
+            <span class="text1">프로젝트 둘러보기</span>
+                <i class="far fa-hand-point-right fa-lg" style=""></i>
+                
+            </div>
+                
+                
+            
+            <div class="clear"></div>
+                
+<!-- Modal Start--------------------------- -->            
 
-<section class="Work Experiences" id="Work Experiences">
-    <div class="container">
-    <div class="section-heading" data-aos="fade-in">
-        <h4>Work Experiences</h4>
-        <div class="Marketing has-margin-top" data-aos="fade-in" data-aos-delay="300">
-            <button class="prev3" type="button"><img src="images/left.png" alt="" /></button>
-            <button class="next3" type="button"><img src="images/right.png" alt="" /></button>
-            <ul>
-                <li><img src="images/Marketing/mar11.png" alt=""></li>
-                <li><img src="images/Marketing/mar22.png" alt=""></li>
-                <li><img src="images/Marketing/mar33.png" alt=""></li>
-                <li><img src="images/Marketing/mar44.png" alt=""></li>
-                <li><img src="images/Marketing/mar55.png" alt=""></li>
-                <li><img src="images/Marketing/mar66.png" alt=""></li>
+<!-- Trigger/Open The Modal -->
 
-            </ul>
+<!-- The Modal -->
+<div id="myModal1" class="modal">
 
-        </div>
+  <!-- Modal content -->
+  <div class="modal-content1">
+    <div class="modal-header">
+      <h2 class="close1">Close</h2>
+      <h1 style="margin-top: 5%; text-align: center">In Marketing Department </h1>
     </div>
-
-    </div>
-    <div class="my-skills" data-aos="fade-left">
-        <div class="skill">
-            <h1>Web Designer in Marketing Dep. of Cardinal Stritch Univ. </h1>
-            <h6>Nov/2017~Feb/2018</h6>
-            <p>As a Web designer intern in Marketing Dep, my first responsibility was creating various<br> pictures and designs to decorate official website and school magazine. <br>To publish annual Stritch magazine in Marketing Dep.<br> I dedicated photography, editing and design skills to figure out <br>how to organize pictures and paragraphs for making it better magazine.</p>
-
-
+      
+      
+    <div class="modal-body">  
+        <div class='slider-for1'>
+            <div><img src="images/Marketing/mar11.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar22.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar33.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar44.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar55.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar66.png" alt=""/>
+            </div>
+            
         </div>
-        <div class="Link">
-            <a href="https://www.stritch.edu/News/Fall-2017/NaturalizationCeremony"><center><h2>Click for Link1</h2></center></a>
-            <a href="https://www.stritch.edu/Student-Experience/Career-Education/Internships"><center><h2>Click for Link2</h2></center></a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="section-heading">
-            <div class="Theater has-margin-top" data-aos="fade-in" data-aos-delay="300">
-                <button class="prev4" type="button"><img src="images/left.png" alt="" /></button>
-                <button class="next4" type="button"><img src="images/right.png" alt="" /></button>
-                <ul>
-                    <li><img src="images/theater/11.png" alt=""></li>
-                    <li><img src="images/theater/22.png" alt=""></li>
-                    <li><img src="images/theater/33.png" alt=""></li>
-                    <li><img src="images/theater/44.png" alt=""></li>
-                    <li><img src="images/theater/55.png" alt=""></li>
-                    <li><img src="images/theater/66.png" alt=""></li>
-                    <li><img src="images/theater/77.png" alt=""></li>
-                    <li><img src="images/theater/88.png" alt=""></li>
-                    <li><img src="images/theater/99.png" alt=""></li>
-                    <li><img src="images/theater/10.png" alt=""></li>
-
-                </ul>
-
+        <div class='slider-nav1'>
+            <div><img src="images/Marketing/mar11.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar22.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar33.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar44.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar55.png" alt=""/>
+            </div>
+            <div><img src="images/Marketing/mar66.png" alt=""/>
             </div>
         </div>
-
-    </div>
-    <div class="my-skills" data-aos="fade-right">
-        <div class="skill">
-            <h1>Graphic Designer, Photographer in Theater Dep. of Cardinal Stritch Univ. </h1>
-            <h6>Nov/2017~Feb/2018</h6>
-            <p>As a Graphic designer, Photographer in Theater Dep, I made logos of the plays, took the best pictures out of the plays.<br> With those, we promoted and advertised our theater plays and Dep. through off line and on line Website.
-            </p>
-
-
+        
+        <div style="margin-top: 30px; margin-left: 150px;" class="float-left">
+        <h2 style="margin-bottom: 10px;">Web Designer, Photographer</h2>
+      <p>웹디자이너와 포토그래퍼로써 마케팅 부서에서 맡은 주된 업무는<br> 교내 다양한 행사에 참가하여 사진과 영상을 제작, 편집한뒤 <br>공식 웹페이지와 학교 매거진을 꾸미는 것 이었습니다.<br><br> 사진기술과 어도비 소프트웨어들을 통해 제작하였고<br> HTML, CSS, JS에 대한 기초적인 지식들을 습득하였습니다.</p>
+      </div>
+        
+        <div style="margin-top: 130px; margin-left: 100px;">
+            <span class="text1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click For External Link 1</span>&nbsp;&nbsp;<a href="https://www.stritch.edu/Student-Experience/Career-Education/Internships"
+            target="_blank"><i class="fas fa-external-link-alt fa-2x"></i></a><br><br>
+            <span class="text1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click For External Link 2</span>&nbsp;&nbsp;<a href="https://www.stritch.edu/News/Fall-2017/NaturalizationCeremony"
+            target="_blank"><i class="fas fa-external-link-alt fa-2x"></i>
+            </a>
         </div>
-        <div class="Link">
-            <a href="https://www.stritch.edu/Events/Theater-Performance-Holiday-Musical-Spectacular"><center><h2>Click for Link1</h2></center></a>
-            <a href="https://www.stritch.edu/Events/Theater-Performance-The-Sleeping-Beauty"><center><h2>Click for Link2</h2></center></a>
-        </div>
+        
+        
+        <div class="clear"></div>
+        <br><br>
+    <hr>    
+        
+       <h1 style="margin-top: 5%; text-align: center">In Theater Department </h1>
     </div>
-    <div class="container">
-        <div class="section-heading">
-            <div class="cam has-margin-top" data-aos="fade-in" data-aos-delay="300">
-                <button class="prev5" type="button"><img src="images/left.png" alt="" /></button>
-                <button class="next5" type="button"><img src="images/right.png" alt="" /></button>
-                <ul>
-                    <li><img src="images/cam/1.png" alt=""></li>
-                    <li><img src="images/cam/2.png" alt=""></li>
-                    <li><img src="images/cam/3.png" alt=""></li>
-                    <li><img src="images/cam/4.png" alt=""></li>
-                    <li><img src="images/cam/5.png" alt=""></li>
-                    <li><img src="images/cam/6.png" alt=""></li>
+      
+      
+    <div class="modal-body">  
+        <div class='slider-for2'>
+            <div><img src="images/theater/11.png" alt=""/>
+            </div>
+            <div><img src="images/theater/22.png" alt=""/>
+            </div>
+            <div><img src="images/theater/33.png" alt=""/>
+            </div>
+            <div><img src="images/theater/44.png" alt=""/>
+            </div>
+            <div><img src="images/theater/55.png" alt=""/>
+            </div>
+            <div><img src="images/theater/66.png" alt=""/>
+            </div>
+            <div><img src="images/theater/77.png" alt=""/>
+            </div>
+            <div><img src="images/theater/88.png" alt=""/>
+            </div>
+            <div><img src="images/theater/99.png" alt=""/>
+            </div>
+            <div><img src="images/theater/10.png" alt=""/>
+            </div>
+            
+            
+        </div>
+        <div class='slider-nav2'>
+            <div><img src="images/theater/11.png" alt=""/>
+            </div>
+            <div><img src="images/theater/22.png" alt=""/>
+            </div>
+            <div><img src="images/theater/33.png" alt=""/>
+            </div>
+            <div><img src="images/theater/44.png" alt=""/>
+            </div>
+            <div><img src="images/theater/55.png" alt=""/>
+            </div>
+            <div><img src="images/theater/66.png" alt=""/>
+            </div>
+            <div><img src="images/theater/77.png" alt=""/>
+            </div>
+            <div><img src="images/theater/88.png" alt=""/>
+            </div>
+            <div><img src="images/theater/99.png" alt=""/>
+            </div>
+            <div><img src="images/theater/10.png" alt=""/>
+            </div>
+            
+        </div>
+        
+        <div style="margin-top: 30px; margin-left: 150px;" class="float-left">
+        <h2 style="margin-bottom: 10px;">Web Designer, Photographer</h2>
+      <p>또한 간헐적으로 열리는 교내 뮤지컬 행사에서 전문 포토그래퍼로<br> 이름을 올려 교내활동을 하였습니다. 편집, 제작한 사진과 영상들을<br> 주로 연극부서 홍보물로 사용하여 웹페이지를 장식하였습니다. </p>
+      </div>
+        
+        <div style="margin-top: 100px; margin-left: 100px;">
+            <span class="text1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click For External Link 1</span>&nbsp;&nbsp;
+            <a href="https://www.stritch.edu/Events/Theater-Performance-Holiday-Musical-Spectacular"
+               target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i></a><br><br>
+            <span class="text1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click For External Link 2</span>&nbsp;&nbsp;
+            <a href="https://www.stritch.edu/Events/Theater-Performance-The-Sleeping-Beauty"
+               target="_blank">
+                <i class="fas fa-external-link-alt fa-2x"></i>
+            </a>
+        </div>
+        
+        
+        <div class="clear"></div> 
+        
+        
+        
+      
+        
+        
+        
+            <br><br><br>
+        <hr>
+         
+        
+        
+        
+        
+        
+        
+    </div>
+  </div>
+</div>
+            
+            
+            
+            
+            
+<!==Web designer, Photographer in Cardinal Stritch University E========================================> 
+            
+<br><br>
+      
+<!==2015.08 ~ 2016.02 Intern Photographer in CAMSCON S========================================> 
+        
+            <div data-aos="fade-down" data-aos-delay="2100">
+            <div class="stick2 float-left"></div>       
+            <span class="navy"
+                  >&nbsp;&nbsp;2015.08 ~ 2016.02 Intern Photographer in CAMSCON &nbsp;&nbsp;</span>
+            
+            
+            </div>
+            <br>
+            
+            <div class="float-left square200" style="background-color: #beebe9"
+                 data-aos="fade-down" data-aos-delay="2400">
+            <a href="https://camscon.kr/"
+               target="_blank"><img src="images/cam1.jpg" style="width: 200px;"></a>
+            
+            <p class="text1"></p>
+            
+            <p class="text2">서울시 강남구 청담동 압구정로 60길 26 2층</p>
+            </div>
+            
+            <div class='explain2 float-left' style="background-color: #beebe9; margin-right: 20px;"
+                 data-aos="fade-down" data-aos-delay="2700">
+            <p style="padding: 15px; font-size: 19px">"캠퍼스 스타일 아이콘(캠스콘) 패션매거진에서 대학생을 대상으로한 인턴 프로그램에 참여하여 포토그래퍼와 에디터로써 활동하였습니다. <br><br>&nbsp;
+                기관 내에서 실시한 어도비 소프트웨어와 포토그래피 강좌를 이수하고 사진촬영과 보정실력을 키웠습니다.
+<br><br>&nbsp;습득한 기술들을 통해  패션화보 촬영과 후보정을 진행하여 사진자료들과
+영상자료들을 만들고 공식 웹페이지에 게시 될 수 있도록 작업하였습니다."</p>
+            </div>
+            
+            
+            <div class="float-left square200 " style="background-color: #beebe9"
+                 data-aos="fade-down" data-aos-delay="3000">
+                <br><br><br>
+            <a href="javascript:void(0)"><i class="far fa-file-word fa-7x" id='myBtn2'></i></a>
+                <br><br>
+            <span class="text1">프로젝트 둘러보기</span>
+                <i class="far fa-hand-point-right fa-lg" style=""></i>
+                
+            </div>
+                
+                
+            
+            <div class="clear"></div>
+                
+<!-- Modal Start--------------------------- -->            
 
+<!-- Trigger/Open The Modal -->
 
-                </ul>
+<!-- The Modal -->
+<div id="myModal2" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content2">
+    <div class="modal-header">
+      <h2 class="close2">Close</h2>
+      <h1 style="margin-top: 5%; text-align: center">CAMSCON Fashion Magazine </h1>
+    </div>
+      
+      
+    <div class="modal-body">  
+        <div class='slider-for3'>
+            <div><img src="images/cam/cam1.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam2.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam3.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam4.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam5.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam6.png" alt=""/>
+            </div>
+            
+            
+            
+        </div>
+        <div class='slider-nav3'>
+            <div><img src="images/cam/cam1.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam2.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam3.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam4.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam5.png" alt=""/>
+            </div>
+            <div><img src="images/cam/cam6.png" alt=""/>
             </div>
         </div>
+        
+        <div style="margin-top: 30px; margin-left: 150px;" class="">
+        <h2 style="margin-bottom: 10px;"> Photographer, Editor</h2>
+      <p>포토그래퍼와 에디터로써 패션화보 촬영을 진행하여 사진자료들과<br> 영상자료들을 만들고 공식 웹페이지에 게시 될 수 있도록 작업하였습니다. </p>
+      </div>
+        
+        <div style="margin-top: 30px; margin-left: 100px;">
+            <span class="text1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click For External Link 1</span>&nbsp;&nbsp;<a href="https://camscon.kr/etc/list-bylocation?kw=%EA%B0%80%ED%86%A8%EB%A6%AD%EB%8C%80"
+            target="_blank"><i class="fas fa-external-link-alt fa-2x"></i></a>
+            
+        </div>
 
+        <br><br>
+    <hr>    
     </div>
-    <div class="my-skills" data-aos="fade-left">
-        <div class="skill">
-            <h1>Photographer in 'CAMSCON' Korean Fashion Megazine </h1>
-            <h6>Aug/2015~Feb/2016</h6>
-            <p>As a photographer and editor, I made the interviews of fashionable people. <br>I took lots of pictures and video clips out of the interviews. I edited those for official website.
-            </p>
+  </div>
+</div>
+                
+                
+            
+            <div class="clear"></div>
+                
+<!==2015.08 ~ 2016.02 Intern Photographer in CAMSCON E========================================>     
 
+<!==2015.05 ~ 2015.09 Intern Fashion Designer in Basso Homme S========================================> 
+        <br><br>
+            
+            <div data-aos="fade-down" data-aos-delay="200">
+            <div class="stick2 float-left"></div>       
+            <span class="navy"
+                  data-aos="fade-down" data-aos-delay="300">&nbsp;&nbsp;2015.05 ~ 2015.09 Intern Fashion Designer in Basso Homme &nbsp;&nbsp;</span>
+            
+            
+            </div>
+            <br>
+            
+            <div class="float-left square200" style="background-color: #beebe9"
+                 data-aos="fade-down" data-aos-delay="600">
+            <a href="http://m.sgsegye.com/bassohomme/"
+               target="_blank"><img src="images/basso1.jpg" style="width: 200px; margin: 50px 10px;"></a>
+            
+            <p class="text1">SG세계물산 남성복사업본부</p>
+            
+            <p class="text2">서울시 금천구 디지털로10길 35</p>
+            </div>
+            
+            <div class='explain2 float-left' style="background-color: #beebe9; margin-right: 20px;"
+                 data-aos="fade-down" data-aos-delay="900">
+            <p style="padding: 15px; font-size: 19px">"SG세계물산 패션사업팀 바쏘 디자인실 인턴사원으로써 주된 업무는 해당 시즌 트렌드 패션 보드 맵 작성,
+판매실적 보드 작성, 업체들을 통한 원단 및 부자재의 주문과 미팅에 참여 였습니다.<br><br>
+&nbsp;기간동안 기본적인 직물들의 이름을 익혔고 원단의 혼용율에 따라서 달라지는 촉감과 질감을 구분할 수 있게 되었습니다. <br><br>&nbsp;원단들로 만든 재킷과 니트와 셔츠와 바지가 만나 일련의 스타일을 형성하고 그 스타일들이 모여 하나의 트렌드가 만들어짐으로써 현재 트렌드를 알 수 있었습니다."</p>
+            </div>
+            
+            <div class="float-left square200" style="background-color: #beebe9"
+                 data-aos="fade-down" data-aos-delay="1200">
+                <img src="images/joo.png" style="width: 250px;">
+            </div>
+                
+                
+            
+            <div class="clear"></div>
+                
+<!==2015.05 ~ 2015.09 Intern Fashion Designer in Basso Homme E========================================>              
 
         </div>
-        <div class="Link">
-            <a href="https://camscon.kr/"><center><h2>Click for Link1</h2></center></a>
-            <a href="https://camscon.kr/location/%EA%B0%80%ED%86%A8%EB%A6%AD%EB%8C%80"><center><h2>Click for Link2</h2></center></a>
-        </div>
+  </section>
+    
+    
+    
+  <section id="section-5">
+    <h1>툴 연습</h1>
+    
+    
+    
+    
+    
+      
+      <div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'London')">
+      <h2 style="opacity: 100%;">
+                Motion Graphic</h2>
+      </button>
+          
+        <button class="tablinks" onclick="openCity(event, 'Paris')">
+            <h2 style="opacity: 100%;">
+          Illustration</h2></button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+            <h2 style="opacity: 100%;">
+                3D Graphic</h2></button>
+</div>
+
+<div id="London" class="tabcontent" style="display: block">
+
+    <img src="images/son.gif" 
+         style="width: 600px; 
+                float: left; 
+                margin-right: 20px;
+                margin-bottom: 50px;">
+    <div 
+         style="width: 300px; 
+                height: 450px; 
+                background-color:#bbbbbb; 
+                float: left">
+        
+        <img src="images/AE.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        <img src="images/pr.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        <img src="images/ps.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        
+    <p style="
+              padding: 15px; 
+              font-size: 19px;
+              color:white;">"어도비 애프터이팩트를 주로 사용한 The New York Times 스포츠섹션 디자인 프로토타입입니다. <br><br>&nbsp;
+                개인적으로 축구를 좋아하고 EPL에서 활약중인 손흥민 선수의 팬으로써 스포츠섹션을 디자인으로 꾸며본다면 어떤 디자인을 만들 수 있을까 고민하며 재밌게 작업한 디자인입니다.
+<br><br>&nbsp;
+        디자인의 주인공인 만큼 손흥민선수의 사진을 크게 중앙에 배치하였고, 최근의 활약들을 쭉 훑으며 줌인 한뒤 편집한 비디오 클립을 삽입하여 동적인 분위기를 연출하였습니다."</p>
     </div>
+    
+    <div class="clear"></div>
+    
+    <div 
+         style="width: 300px; 
+                height: 450px; 
+                background-color: #fddd05; 
+                float: left">
+    
+    <img src="images/xd.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        <img src="images/ai.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        <img src="images/ps.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        
+    <p style="
+              padding: 15px; 
+              font-size: 19px;
+              color:white;">"어도비 Xd등의 툴을 사용해 만든 BMI 측정앱 디자인 프로토타입입니다. <br>&nbsp;
+                노란색의 레고를 디자인 컨셉으로 정하여 앱의 시작화면을 레고의 몸 속을 돋보기로 탐험하는 Affordance디자인으로 만들어 보았습니다.
+<br><br>&nbsp;
+        앱에 입장한 뒤엔 사용자의 신장과 체중을 스크롤바를 통해 조작하며, 사용자의 조작에 따라 피규어의 모습이 변하도록 하는 Interaction 디자인입니다.
+        <br><br>&nbsp;
+        입력된 결과로 BMI를 계산하여 비슷한 체형의 Figure를 찾아줍니다.
+        "</p>
+        
+        
+    </div>
+    <img src="images/bmi.gif" 
+         style="width: 600px;
+                margin-left:20px;
+                margin-bottom: 50px;
+                ">
+    <div class="clear"></div>
+    <img src="images/kakao%20pay.gif" 
+         style="width: 600px;
+                float: left;
+                margin-right: 20px;
+                margin-bottom: 50px;">
+    
+    <div 
+         style="width: 300px; 
+                height: 450px; 
+                background-color: #64c2ff; 
+                float: left;
+                ">
+    <img src="images/xd.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        <img src="images/ae.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        
+        <img src="images/ps.png" 
+         style="width: 40px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        
+    <p style="
+              padding: 15px;
+              
+              font-size: 19px;
+              color:white;
+              padding-top: 30px;">"Xd와 AE를 사용해 만든 송금앱 디자인 프로토타입입니다. <br><br>&nbsp;
+                직관적으로 앱을 실행하면 주변지인들의 얼굴들이 떠오르고, 그중 거래를 원하는 대상을 드래그하면 해당 사람의 얼굴과 함께 액수를 정하는 화면으로 이동이 됩니다.
+<br><br>&nbsp;
+        숫자를 정한 후, 현금과 선물란으로 이동하게 되고 선택완료 후엔 송금이 되는 모습이 동전이 넘어가는 모습으로 직관적으로 표현됩니다."</p>
+    
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  
+    <img src="images/nana.png" class="nana"
+         style="float: left;
+                padding-right: 5px;
+                padding-bottom: 50px;";>
+    
+    <div 
+         style="width: 300px;
+                border-radius: 30px;
+                height: 482px; 
+                background-color:#65c4a7; 
+                float: left;">
+        
+        <img src="images/ai.png" 
+         style="width: 50px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;
+                padding-top: 20px;
+                padding-left: 20px;
+                "
+                
+             >
+        
+        <img src="images/ps.png" 
+         style="width: 50px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        
+    <p style="
+              padding: 15px; 
+              font-size: 19px;
+              color:white;
+              padding-top: 80px;">"어도비 일러스트를 연습할때 그렸었던 인물화입니다. <br><br>&nbsp;
+                펜툴을 기본으로 여성인물의 피부명암과 긴 갈색머리를 표현하였고 푸른계열의 색과 식물들, 방울을 배경에 배치하여 밝고 화사한 분위기를 표현하였습니다."</p>
+    </div>
+    
+    <img src="images/blond.png" class="blonde">
+    <div 
+         style="width: 300px; 
+                height: 631px; 
+                background-color:#46858f; 
+                float: left;
+                padding-right: 20px;">
+        
+        <img src="images/ai.png" 
+         style="width: 50px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;
+                padding-top: 20px;
+                padding-left: 20px;
+                "
+                
+             >
+        
+        <img src="images/ps.png" 
+         style="width: 50px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        
+    <p style="
+              padding: 15px; 
+              font-size: 19px;
+              color:white;
+              padding-top: 100px;">"또 다른 인물화로 머리카락과 눈썹, 수염을 특히 디테일하게 표현한 디자인입니다. <br><br>&nbsp;
+                펜툴로 수많은 모량을 표현한 뒤 여러가지 채도의 색상을 입혀 명암을 표현하였습니다.
+        
+        <br><br>&nbsp;
+            배경으로는 수직적인 사각형들을 불규칙하게 배열하여 남성스럽고 강한 분위기를 표현하였습니다.
+        "</p>
+    </div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <img src="images/chimac.png" class="chimac"
+       style="float: left;
+              padding-right: 20px;"
+       >
+    
+    <div 
+         style="width: 300px; 
+                height: 680px; 
+                background-color:#ca4037; 
+                float: left;
+                padding-right: 20px;">
+        
+        <img src="images/blender.png" 
+         style="width: 50px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        
+        <img src="images/ps.png" 
+         style="width: 50px; 
+                float: ; 
+                padding: 10px;
+                padding-right: 0px;">
+        
+    <p style="
+              padding: 15px; 
+              font-size: 19px;
+              color:white;
+              padding-top: 100px;">"Blender 3D디자인 툴을 사용한 포스터 작품입니다. <br><br>&nbsp;
+                대구시에서 개최한 치맥페스티벌 포스터 공모전에서 3D 포스터를 디자인 하여 장려상을 수상하였습니다.
+<br><br>&nbsp;
+        맥주바를 연상케하는 벽돌 배경과 그와 어울리는 네온사인 레터링디자인으로 독창적인 디자인을 하고 싶었습니다.
+        <br><br>&nbsp;
+        넘치는 맥주위에서 서핑보드를 즐기고 있는 치맥페스티벌 공식 캐릭터를 삽입하여 여름날에 시원한 분위기를 연출하였습니다."</p>
+    </div>
+    
+</div>
+      
+  </section>
+    
+    <div class="clear"></div>
+    
+    
+  <section id="section-6">
+    <h1>Skill Set</h1>
+    <span>Ps</span>
+    <span>Ai</span>
+    <span>Ae</span>
+    <span>Xd, Sketch</span>
+    <span>InVision</span>
+    <span>Omnigraffle</span>
+    <span>Zeplin</span>
+    <span>Blender</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>js</span>
+    <span>java programming</span>
+    <span>SQL</span>
+      
+      
+  </section>
+  <section id="section-7">
+    
+  </section>
+  <section id="section-8">
+    
+  </section>
+  <section id="section-9">
+    
+  </section>
+
+<section id='about'>
+    
+</section>    
+    
+<section id="education">
+    
 </section>
-
-
-
-
-
+    
+    
+<section id="work">
+    
+</section>    
+    
+<section id="practice">
+    
+</section>
+    
+<section id="skill">
+    
+</section>    
+</div>
+</main>
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
 <footer class="copyright">
     <div class="up" id="up">
-        <i class="fas fa-chevron-up"></i>
-
+        <a href="#"><i class="fas fa-chevron-up"></i>
+</a>
     </div>
-    <p>&copy; 2019 HanKyeong Ko</p>
+    <p>&copy; 2020 HanKyeong Ko</p>
 </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
+
+    
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+    
+    
+    
 </body>
 </html>
+    
